@@ -4,5 +4,6 @@ const port = 3000;
 
 app.use(express.static(__dirname + '/../public'));
 
+app.use('/rooms/:id', express.static(__dirname + '/../public'));
 
 app.listen(port, () => console.log(`Proxy listening on port ${port}!`));
